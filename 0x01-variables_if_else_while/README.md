@@ -10,4 +10,6 @@ This program contains additional information about the programs, scripts and fil
 
 3-print_alphabets.c - prints the alphabet in lowercase then in uppercase using the putchar function. 
 
-c
+4-print_alphabt.c - prints the alphabet in lowercase excepting 'q' and 'e' using the 'putchar' function.
+
+
