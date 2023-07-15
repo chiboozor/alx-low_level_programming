@@ -8,4 +8,6 @@ This program contains additional information about the programs, scripts and fil
 
 2-print_alphabet.c - program that prints the alphabet in lowecase using the 'putchar' function. This function allows you to print character one at a time, unlike the 'printf'.
 
+3-print_alphabets.c - prints the alphabet in lowercase then in uppercase using the putchar function. 
 
+c
