@@ -15,4 +15,9 @@ This README contains additional information about the workings of each script an
 4-puts.c - a C program that prints exactly _"Programming is like building a multilingual puzzle_ to the stdout using the 'puts' function.
 
 5-printf.c - C program that prints exactly _with proper grammar, but the outcome is a piece of art,_ using the printf function.
+
 6-size.c - program that prints the size of various types on the computer it is compiled on.
+
+100-intel - a script that generates assembly code (intel syntax) of a C code saved in another file. The C file name will be saved in the variable $CFILE, output name should be the same as the input file name.
+
+
