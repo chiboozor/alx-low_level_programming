@@ -12,9 +12,11 @@ This program contains additional information about the programs, scripts and fil
 
 4-print_alphabt.c - prints the alphabet in lowercase excepting 'q' and 'e' using the 'putchar' function.
 
-5-print_numbers.c - prints all single digit numbers of base 10 starting from 0. Basically, print from 0 - 9. And it's tricky cause you can't just print numbers directly using the putchar function. So we add '0' to the number to be printed in order to get its ASCII value as putchar only prints characters, so to get the ASCII value of a number '0' (=48) is added to that number.
+5-print_numbers.c - prints all single digit numbers of base 10 using the 'printf' function.
 
-6-print_numberz.c - same program as task 5-print_numbers.c.
+
+6-print_numberz.c - prints all single digit numbers of base 10 starting from 0. Basically, print from 0 - 9. And it's tricky cause you can't just print numbers directly using the putchar function. So we add '0' to the number to be printed in order to get its ASCII value as putchar only prints characters.
+
 
 
 

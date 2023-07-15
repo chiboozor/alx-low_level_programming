@@ -11,10 +11,9 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		/* To get the ASCII value of the number, add '0'. */
-		putchar(i + '0');
+		printf("%d", i);
 	}
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
