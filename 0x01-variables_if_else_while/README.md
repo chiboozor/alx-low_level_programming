@@ -6,4 +6,6 @@ This program contains additional information about the programs, scripts and fil
 
 1-last_digit.c - assigns a random number to a variable each time it is executed and prints whether the last digit of the number is >, < or = to a number.
 
+2-print_alphabet.c - program that prints the alphabet in lowecase using the 'putchar' function. This function allows you to print character one at a time, unlike the 'printf'.
+
 
