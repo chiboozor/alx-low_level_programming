@@ -16,6 +16,8 @@ This program contains additional information about the programs, scripts and fil
 
 6-print_numberz.c - prints all single digit numbers of base 10 starting from 0. Basically, print from 0 - 9. And it's tricky cause you can't just print numbers directly using the putchar function. So we add '0' to the number to be printed in order to get its ASCII value as putchar only prints characters.
 
-7-print_tebahpla.c - prints the alphabet in lowercase in reverse using the _putchar' function.
+7-print_tebahpla.c - prints the alphabet in lowercase in reverse using the _putchar_ function.
+
+8-print_base16.c - prints all numbers of base 16 in lowercase using _putchar_ function.
 
 
