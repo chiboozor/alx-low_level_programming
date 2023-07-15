@@ -20,4 +20,6 @@ This program contains additional information about the programs, scripts and fil
 
 8-print_base16.c - prints all numbers of base 16 in lowercase using _putchar_ function.
 
+9-print_comb.c - prints all possible combo of single digit numbers separated by commas.
+
 
