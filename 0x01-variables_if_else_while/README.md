@@ -22,4 +22,6 @@ This program contains additional information about the programs, scripts and fil
 
 9-print_comb.c - prints all possible combo of single digit numbers separated by commas.
 
+100-print_comb3.c - prints all possible different combo of two digits separated by a comma, followed by a space. The two digits must be different and printed in ascending order.
+
 
