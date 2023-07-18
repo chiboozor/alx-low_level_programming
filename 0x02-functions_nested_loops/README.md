@@ -16,4 +16,6 @@
 
 7-print_last_digit.c - prints the last digit of a number. Returns the value of the last digit.
 
+8-24_hours.c - prints every minute of the day starting from 00:00 to 23:59. To get the first digit of the hour and minute hand, integer division is carried out on the variables, while modulo division is carried out on the variables to get the second digit of the hour and minute hand respectively.
+
 
