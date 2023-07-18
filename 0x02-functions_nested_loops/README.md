@@ -14,4 +14,6 @@
 
 6-abs.c - computes the absolute value of an integer 'a'. It returns 'a'  multiplied by -1 if 'a' < 0; returns 'a' if 'a' >= 0.
 
+7-print_last_digit.c - prints the last digit of a number. Returns the value of the last digit.
+
 
