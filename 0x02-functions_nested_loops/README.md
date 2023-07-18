@@ -18,4 +18,8 @@
 
 8-24_hours.c - prints every minute of the day starting from 00:00 to 23:59. To get the first digit of the hour and minute hand, integer division is carried out on the variables, while modulo division is carried out on the variables to get the second digit of the hour and minute hand respectively.
 
+9-times_table.c - printing the 9 times table starting from 0.
+
+10-add.c - adds two integers and returns the result.
+
 
