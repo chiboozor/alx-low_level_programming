@@ -12,4 +12,6 @@
 
 5-sign.c - prints the sign of a number n. Returns 1 and prints '+' if n is > 0; 0 and prints '0' if n = 0; -1 and prints '-' if n < 0.
 
+6-abs.c - computes the absolute value of an integer 'a'. It returns 'a'  multiplied by -1 if 'a' < 0; returns 'a' if 'a' >= 0.
+
 
