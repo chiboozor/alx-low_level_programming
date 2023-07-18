@@ -10,4 +10,6 @@
 
 4-isalpha.c - checks if a character is a letter, lowercase, or uppercase. Returns 1 if character meets the aforementioned criteria; 0 otherwise.
 
+5-sign.c - prints the sign of a number n. Returns 1 and prints '+' if n is > 0; 0 and prints '0' if n = 0; -1 and prints '-' if n < 0.
+
 
