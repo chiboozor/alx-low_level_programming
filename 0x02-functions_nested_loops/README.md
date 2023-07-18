@@ -4,4 +4,8 @@
 
 1-alphabet.c - a function that prints the alphabet in lowercase using the \_putchar function.
 
-2-print_alphabet_x10.c - this functions prints the alphabet in lowercase 10 times. 
+2-print_alphabet_x10.c - this functions prints the alphabet in lowercase 10 times.
+
+3-islower.c - cheecks for a lowercase character. Returns 1 if xter is lowrcase, 0 otherwise.
+
+ 
