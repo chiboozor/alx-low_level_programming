@@ -10,7 +10,9 @@ int print_last_digit(int a)
 {
 	int i;
 
-	i = a % 10;
+	i = a % 10; /* To get the last digit of a. */
+
+	/* Checks. */
 	if (i > 0)
 	{
 		_putchar(i + '0');
