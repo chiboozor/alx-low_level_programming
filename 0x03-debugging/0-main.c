@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * main - program entry point.
- * Return: 0 on success.
- *
- * positive_or_negative: fxn used to test whether a number is +ve or -ve.
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 
 int main(void)
 {
-	int i;
+        int i;
 
-	i = 0;
-	positive_or_negative(i);
+        i = 0;
+        positive_or_negative(i);
 
-	return (0);
+        return (0);
 }
