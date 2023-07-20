@@ -8,14 +8,10 @@ void print_most_numbers(void)
 {
 	/* Initialization of a counter variable. */
 	int i;
-
+	
 	for (i = 0; i <= 9; i++)
 	{
-		if (i == 2 || 2 == 4)
-		{
-			continue;
-		}
-		else
+		if (i != 2 && i != 4)
 		{
 			_putchar(i + '0');
 		}
