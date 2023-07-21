@@ -11,7 +11,7 @@ void print_line(int n)
 	int i;
 
 	/* A loop that runs n times. */
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
 		/* Prints a new line if n <= 0. */
 		if (n <= 0)
@@ -19,11 +19,9 @@ void print_line(int n)
 			/* 10 is decimal value for newline in the ASCII table. */
 			_putchar(10);
 		}
-		else
-		{
-			/* 95 is the decimal value of '_' in the ASCII table. */
-			_putchar(95);
-		}
+		/* 95 is the decimal value of '_' in the ASCII table. */
+		_putchar(95);
+
 	}
 	_putchar('\n');
 }
