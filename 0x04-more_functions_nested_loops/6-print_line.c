@@ -16,11 +16,13 @@ void print_line(int n)
 		/* Prints a new line if n <= 0. */
 		if (n <= 0)
 		{
-			_putchar('\n');
+			/* 10 is decimal value for newline in the ASCII table. */
+			_putchar(10);
 		}
 		else
 		{
-			_putchar('_');
+			/* 95 is the decimal value of '_' in the ASCII table. */
+			_putchar(95);
 		}
 	}
 	_putchar('\n');
