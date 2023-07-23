@@ -15,3 +15,8 @@
 6-print_line.c - draws a straight line on the terminal based on the number passed to the print_line function
 
 7-print_diagonal.c - prints a diagonal n times using '\'. The outer loop iterates n time, while the inner loop iterates j times printing spaces equal to the current iteration i.e j prints two spaces for i = 2 before printing the backslash, prints 4 spaces for i = 5 before printing the backslah and so on.
+
+8-print_square.c - prints a square of size 'size'. The outer loop iterates to create the square's height, while the inner loop iterates to create the square's width. There's a check print a new line if size <= 0.
+
+9-fizz_buzz.c - the FizzBuzz program prints words in place of some number between 1 and 100. It rints 'Fizz' for numbers that are multiples of 3, 'Buzz' for numbers that are multiples of 5, and 'FizzBuzz' for multiples of both 3 and 5.
+There are two if statements: the first checks if i passes the criteria of either being a multiple of 3, 5 or both; the second checks if i != 100 for which it prints a space immediately after printing i, and does nothing if i == 100.
