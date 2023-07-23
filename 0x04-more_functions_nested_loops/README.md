@@ -10,4 +10,8 @@
 
 4-print_most_numbers.c - same function as task 3 above but with the exception of 2 and 4. A conditional check was added to the function to check if the digit is not 2 and neither is it 4.`
 
+5-more_numbers.c - prints the numbers 0-14 ten times followed by a new line using the \_putchar function. Two loops is used: Outer loop for printing the numbers ten times, and the inner loop for printing the numbers themselves on a line.
 
+6-print_line.c - draws a straight line on the terminal based on the number passed to the print_line function
+
+7-print_diagonal.c - prints a diagonal n times using '\'. The outer loop iterates n time, while the inner loop iterates j times printing spaces equal to the current iteration i.e j prints two spaces for i = 2 before printing the backslash, prints 4 spaces for i = 5 before printing the backslah and so on.
