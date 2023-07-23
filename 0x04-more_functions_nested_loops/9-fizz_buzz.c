@@ -35,7 +35,7 @@ int main(void)
 		/* Print the number. */
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
 		}
 
 		if (i != 100)
