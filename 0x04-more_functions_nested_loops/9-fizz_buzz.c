@@ -20,22 +20,27 @@ int main(void)
 		/* Prints 'FizzBuzz' if i is a multiple of 3 and 5. */
 		if ((i % 3) == 0 && ((i % 5) == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		/* Prints 'Fizz' if i is a multiple of 3. */
 		else if ((i % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		/* Prints 'Buzz' if i is a multiple of 5. */
 		else if ((i % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		/* Print the number. */
 		else
 		{
 			printf("%d ", i);
+		}
+
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
