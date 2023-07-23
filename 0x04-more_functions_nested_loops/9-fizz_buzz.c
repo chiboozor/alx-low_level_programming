@@ -4,8 +4,8 @@
  * main - program entry point.
  * Return: 0.
  *
- * FizzBuzz program. Prints 1-100 followed by a new line, but 
- * prints 'Fizz' for multiples of 3, 'Buzz' for multiples of 5, 
+ * FizzBuzz program. Prints 1-100 followed by a new line, but
+ * prints 'Fizz' for multiples of 3, 'Buzz' for multiples of 5,
  * and 'FizzBuzz' for multiples of both 3 and 5.
  */
 
@@ -17,8 +17,8 @@ int main(void)
 	/* Loop to print the numbers. */
 	for (i = 1; i <= 100; i++)
 	{
-		/* Prints 'FizzBuzz' if i is a multiple of 15. */
-		if ((i % 15) == 0)
+		/* Prints 'FizzBuzz' if i is a multiple of 3 and 5. */
+		if ((i % 3) == 0 && ((i % 5) == 0))
 		{
 			printf("FizzBuzz ");
 		}
@@ -39,6 +39,6 @@ int main(void)
 		}
 	}
 	printf("\n");
-	
+
 	return (0);
 }
