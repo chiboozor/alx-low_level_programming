@@ -10,22 +10,21 @@ void print_rev(char *s)
 	int i = 0; /* Loop counter. */
 	int count = 0; /* Holds the string length. */
 
+	/* Returns if the string being pointed to by *s is empty. */
+	if (*s == '\0')
+	{
+		return;
+	}
 
-	/* A while loop is used to get the length of the string. */
+	/* While loop is used to get the length of the string. */
 	while (s[i] != '\0')
 	{
 		count++;
 		i++;
 	}
 
-	/* Returns if string is < 0 (empty). */
-	if (count < 0)
-	{
-		return;
-	}
-
-	/* For loop is used to iterate through the length of the string. */
-	for (i = count; i >= 0; i--)
+	/* For loop is used to iterate over known length of string. */
+	for (i = count - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
