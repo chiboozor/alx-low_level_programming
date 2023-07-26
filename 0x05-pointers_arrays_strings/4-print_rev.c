@@ -14,7 +14,7 @@ void print_rev(char *s)
 	/* A while loop is used to get the length of the string. */
 	while (s[i] != '\0')
 	{
-		count += 1;
+		count++;
 		i++;
 	}
 
