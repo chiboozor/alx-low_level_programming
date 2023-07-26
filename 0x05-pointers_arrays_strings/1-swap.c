@@ -13,6 +13,10 @@ void swap_int(int *a, int *b)
 	 * dereferenced and then mapped to each other.
 	 */
 
+	int i;
+
+	i = *a;
 	*a = *b;
 	*b = *a;
+	*a = i;
 }
