@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int count = 0; /* Holds the string length. */
 
 	/* Returns if the string being pointed to by *s is empty. */
-	if (*s == '\0')
+	if (s[i] == '\0')
 	{
 		return;
 	}
