@@ -10,10 +10,10 @@ void print_rev(char *s)
 	int i = 0; /* Loop counter. */
 	int count = 0; /* Holds the string length. */
 
-	/* Returns if the string being pointed to by *s is empty. */
-	if (s[i] == '\0')
+	/* Breaks if the string being pointed to by *s is empty. */
+	if (*s == '\0')
 	{
-		return;
+		break;
 	}
 
 	/* While loop is used to get the length of the string. */
