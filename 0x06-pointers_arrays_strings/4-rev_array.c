@@ -14,7 +14,7 @@ void reverse_array(int *a, int n)
 	/* Variable to store an element of the array temporarily. */
 	int tmp;
 
-	/** 
+	/**
 	 * The loop only runs through half of the array (n / 2)
 	 * since we simply wants to swap the positions of each
 	 * member up until the terminating null character.
