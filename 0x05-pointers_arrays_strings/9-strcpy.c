@@ -21,6 +21,11 @@ char *_strcpy(char *dest, char *src)
 		len++;
 	}
 
+	/**
+	 * Loops through the len of src, adds 1 for
+	 * the terminating null byte, and then copies
+	 * the characters in src into dest.
+	 */
 	for (i = 0; i < len + 1; i++)
 	{
 		dest[i] = src[i];
