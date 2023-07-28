@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _strcpy - copies a string from src into dest.
+ * _strcpy - copies a string from the buffer pointed to
+ * by src into the buffer pointed to by  dest.
  * @src: pointer to source string.
  * @dest: pointer to destination string.
  * Return: pointer to destination string.
@@ -12,16 +13,16 @@ char *_strcpy(char *dest, char *src)
 {
 	/* Loop variable. */
 	int i;
+	int len = 0;
 
 	/* Get the length of src string. */
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		/* Checks if the src string is NULL. */
-		if (src == NULL)
-		{
-			break;
-		}
-		/* Copies into dest string the characters in src string. */
+		len++;
+	}
+
+	for (i = 0; i < len + 1; i++)
+	{
 		dest[i] = src[i];
 	}
 	return (dest);
