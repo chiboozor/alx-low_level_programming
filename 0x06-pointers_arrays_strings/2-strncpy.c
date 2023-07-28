@@ -14,7 +14,7 @@ char *_strncpy(char *dest, char *src, int n)
 	/* Loop variable. */
 	int i;
 
-	/** 
+	/**
 	 * len = length of source string (src).
 	 * len2 = length of destination string (dest).
 	 */
@@ -34,7 +34,7 @@ char *_strncpy(char *dest, char *src, int n)
 	/* Loop to get length of dest string. */
 	for (i = 0; dest[i] != '\0'; i++)
 		len2++;
-	
+
 	/* Loop to copy n elements of src into dest string. */
 	for (i = 0; i < n; i++)
 	{
