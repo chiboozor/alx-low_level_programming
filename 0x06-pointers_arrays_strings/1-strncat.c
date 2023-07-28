@@ -19,6 +19,11 @@ char *_strncat(char *dest, char *src, int n)
 	int len = 0;
 	int len2 = 0;
 
+	if (*src == '\0' && *dest == '\0')
+	{
+		return (dest);
+	}
+
 	/* Length of src string. */
 	for (i = 0; src[i] != '\0'; i++)
 		len++;
