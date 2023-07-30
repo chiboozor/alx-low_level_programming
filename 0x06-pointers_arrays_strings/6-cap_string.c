@@ -10,17 +10,22 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	/* Loops through the string. */
+	/* Capitalizes the word if first character is lowercase. */
+	if (s[i] >= 'a' && s[i] <= 'z')
+	{
+		s[i] -= 32;
+	}
+
+	/* Loops through the string while it isn't the terminating null byte. */
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		/* Checks if the string is an empty string. */
 		if (*s == '\0')
 		{
 			break;
 		}
-		/**
-		 * Checks if the character at the ith index is any of the
-		 * separators below.
-		 */
+
+		/* Checks if the character is any of the separators below. */
 
 		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '"'
 				|| s[i] == ','  || s[i] == ';' || s[i] == '.'
@@ -36,7 +41,6 @@ char *cap_string(char *s)
 			{
 				s[i + 1] -= 32;
 			}
-			continue;
 		}
 	}
 	return (s);
