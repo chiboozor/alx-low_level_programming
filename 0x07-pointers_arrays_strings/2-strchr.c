@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
-	
+
 	/* Checks if the c is the terminating null byte. */
 	if (s[i] == c)
 	{
