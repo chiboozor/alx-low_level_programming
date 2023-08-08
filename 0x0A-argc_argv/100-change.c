@@ -10,17 +10,15 @@
 
 int main(int argc, char *argv[])
 {
-	int i, cents;
-	int count = 0;
+	int i, cents; /* Cents = amount of change to give back */
+	int count = 0; /* Min number of cents required to make change */
 
-	if (argc != 2)
+	if (argc != 2) /* Checks if the exact number of args passed is 2 */
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	cents = atoi(argv[1]);
-
+	cents = atoi(argv[1]); /* Converts the argument to integer */
 	for (i = 0; cents > 0; i++)
 	{
 		if (cents >= 25)
