@@ -9,7 +9,7 @@
  * Return: 0 on success, 1 on failure
  */
 
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
 	/* Program that adds postitive numbers. */
 
