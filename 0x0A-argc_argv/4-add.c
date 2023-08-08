@@ -30,19 +30,25 @@ int main(int argc, __attribute__((unused)) char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		/* Checks if the argument passed is not a digit */
-		if (!isdigit(*argv[i]))
+		/* Pointer to argv[i] */
+		char *p = argv[i];
+
+		/* Iterates over each character of argv[i] */
+		while (*p != '\0')
 		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			/* Converts the arg into an integer */
-			sum = sum + atoi(argv[i]);
+			if (!isdigit(*p))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				/* Converts the arg into an integer */
+				sum = sum + atoi(argv[i]);
+			}
+			p++;
 		}
 	}
 	printf("%d\n", sum);
-
 	return (0);
 }
