@@ -41,13 +41,11 @@ int main(int argc, __attribute__((unused)) char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				/* Converts the arg into an integer */
-				sum = sum + atoi(argv[i]);
-			}
 			p++;
 		}
+
+		/* Converts argv[i] to integer and adds to sum */
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
