@@ -25,6 +25,12 @@ char *create_array(unsigned int size, char c)
 	/* Dynamically allocates memory using the size of the character passed */
 	ptr = malloc(size * sizeof(c));
 
+	/* Checks if memory allocated is empty */
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
 	/* Initializes counter variable to 0 */
 	i = 0;
 
@@ -36,6 +42,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	/* Returns a ointer to the array */
+	/* Returns a pointer to the array */
 	return (ptr);
 }
