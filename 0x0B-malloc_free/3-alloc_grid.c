@@ -26,7 +26,6 @@ int **alloc_grid(int width, int height)
 
 	if (array_ptr == NULL)
 		return (NULL);
-
 	/* Outer loop iterates through the cols of the array */
 	for (i = 0; i < height; i++)
 	{
