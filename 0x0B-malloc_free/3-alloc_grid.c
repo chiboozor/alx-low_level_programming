@@ -19,9 +19,8 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	/**
-	 * Memory allocation is done by multiplying the size of the array
-	 * pointer in the array of pointers by the height of the array to
-	 * be created in memory.
+	 * Memory is allocated for the 2D array by multiplying the
+	 * inner array pointer size by the number of inner arrays to be created.
 	 */
 	array_ptr = malloc(sizeof(*array_ptr) * height);
 
@@ -31,11 +30,10 @@ int **alloc_grid(int width, int height)
 	/* Outer loop iterates through the cols of the array */
 	for (i = 0; i < height; i++)
 	{
-		/* Memory is allocated for the rows */
+		/* Memory is allocated for the inner array */
 		array_ptr[i] = malloc(sizeof(int) * width);
 
-		/* Frees all memory if **array_ptr is NULL */
-		/**
+		/* Frees memory if allocation for each index of the inner array fails */
 		if (array_ptr[i] == NULL)
 		{
 			for (i--; i >= 0; i--)
@@ -43,11 +41,11 @@ int **alloc_grid(int width, int height)
 			free(array_ptr);
 			return (NULL);
 		}
-		*/
+
 		/* Inner loop iterates through the rows of the array */
 		for (j = 0; j < width; j++)
 		{
-			/* Every index of the array is initialized to 0 */
+			/* Every index of the inner array is initialized to 0 */
 			array_ptr[i][j] = 0;
 		}
 	}
