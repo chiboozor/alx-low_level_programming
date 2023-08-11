@@ -36,6 +36,7 @@ int **alloc_grid(int width, int height)
 		/* Frees memory if allocation for each index of the inner array fails */
 		if (array_ptr[i] == NULL)
 		{
+			/* See README for explanation on how this loop works. */
 			for (i--; i >= 0; i--)
 				free(array_ptr[i]);
 			free(array_ptr);
