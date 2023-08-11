@@ -35,6 +35,7 @@ int **alloc_grid(int width, int height)
 		array_ptr[i] = malloc(sizeof(int) * width);
 
 		/* Frees all memory if **array_ptr is NULL */
+		/**
 		if (array_ptr[i] == NULL)
 		{
 			for (i--; i >= 0; i--)
@@ -42,6 +43,7 @@ int **alloc_grid(int width, int height)
 			free(array_ptr);
 			return (NULL);
 		}
+		*/
 		/* Inner loop iterates through the rows of the array */
 		for (j = 0; j < width; j++)
 		{
