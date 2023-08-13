@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 
 	/* Allocates memory for the new string */
-	str_ptr = malloc((len + len2 + 1) * sizeof(char));
+	str_ptr = malloc((len + n + 1) * sizeof(*str_ptr));
 
 	/* Returns NULL if malloc fails */
 	if (str_ptr == NULL)
@@ -46,10 +46,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* Concats n elements of s2 to new string from the end of the new string */
 	for (j = 0; j < nums; j++)
-		str_ptr[i + j] = s2[j];
+		str_ptr[len + j] = s2[j];
 
 	/* Adds terminating null character at the end of the new string */
-	str_ptr[i + j] = '\0';
+	str_ptr[len + n] = '\0';
 
 	return (str_ptr);
 }
