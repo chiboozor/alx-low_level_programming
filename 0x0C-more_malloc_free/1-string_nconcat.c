@@ -34,9 +34,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str_ptr == NULL)
 		return (NULL);
 
-	/* Returns source string if num of bytes to concat >= len of dest string */
+	/* Uses source string if num of bytes to concat >= len of dest string */
 	if (n >= len2)
-		return (s2);
+		n = len2;
 
 	/* Concats elements of s1 to new string in memory */
 	for (i = 0; i < len; i++)
@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str_ptr[len + j] = s2[j];
 
 	/* Adds terminating null character at the end of the new string */
-	str_ptr[len2 + 1] = '\0';
+	str_ptr[len2 + n] = '\0';
 
 	return (str_ptr);
 }
