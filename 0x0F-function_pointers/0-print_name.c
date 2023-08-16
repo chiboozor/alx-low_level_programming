@@ -25,5 +25,7 @@ void print_name(char *name, void (*f)(char *))
 	 * wants to prints.
 	 */
 
+	if (name == NULL)
+		name = "";
 	f(name);
 }
