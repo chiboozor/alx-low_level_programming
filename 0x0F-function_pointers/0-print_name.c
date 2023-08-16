@@ -17,15 +17,20 @@ void print_name(char *name, void (*f)(char *))
 	 * line of code in its body is the function being called
 	 * (pointed to by the function pointer (*f)), and the
 	 * argument of the function being called (a string being
-	 * pointed to by a string (*name).
+	 * pointed to by a string (*name)).
 	 *
 	 * Basically, the print_name prints a name, but not by itself
 	 * It simply calls some other function, written somewhere in
 	 * the program, and asks passes to the function the string it
 	 * wants to prints.
+	 *
+	 * A check is added to simply return if pointers to the string
+	 * or function is NULL. (It's now a default thing. All thanks
+	 * to ALX. (^-_-^))
 	 */
 
-	if (name == NULL)
-		name = "";
+	if (name == NULL || f == NULL)
+		return;
+
 	f(name);
 }
