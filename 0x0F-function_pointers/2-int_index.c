@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int j;
 
-	/** 
+	/**
 	 * index is set to -1 since it is not a valid index
 	 * and to avoid ambiguity i.e setting index to 0 is
 	 * ambigous because 0 is a valid index
