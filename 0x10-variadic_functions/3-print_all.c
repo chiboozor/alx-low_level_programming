@@ -22,7 +22,6 @@ void print_all(const char * const format, ...)
 		switch  (format[i])
 		{
 			case 'c':
-				/* See README for explanation for double promo argument */
 				printf("%s%c", separator, va_arg(arg_list, int));
 				break;
 			case 'i':
@@ -32,11 +31,12 @@ void print_all(const char * const format, ...)
 				printf("%s%f", separator, va_arg(arg_list, double));
 				break;
 			case 's':
+				s = va_arg(arg_list, char *);
+
 				if (s == NULL)
-				{
 					s = "(nil)";
-				}
-				printf("%s%s", separator, va_arg(arg_list, char *));
+
+				printf("%s%s", separator, s);
 				break;
 			default:
 				i++;
