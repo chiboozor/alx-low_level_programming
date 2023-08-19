@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 /* Function prototypes used in the project */
 
